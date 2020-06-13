@@ -34,5 +34,6 @@ int main() {
 	cout << "\nT2 < T1? " << boolalpha << (t2 < t1) << endl;
 	cout << "\nT1 >= T2? " << boolalpha << (t1 >= t2) << endl;
 	cout << "\nT2 <= T3? " << boolalpha << (t2 <= t3) << endl;
+
 	return 0;
 }
