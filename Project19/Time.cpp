@@ -114,18 +114,24 @@ bool Time::operator!=(const Time& t2) const{
 }
 
 void Time::SetHours(int hours){
-	this->hours = hours;
-	CorrectTime();
+	if (hours > 0) {
+		this->hours = hours;
+		CorrectTime();
+	}
 }
 
 void Time::SetMinutes(int minutes){
-	this->minutes = minutes;
-	CorrectTime();
+	if (minutes > 0) {
+		this->minutes = minutes;
+		CorrectTime();
+	}
 }
 
 void Time::SetSeconds(int seconds){
-	this->seconds = seconds;
-	CorrectTime();
+	if (seconds > 0) {
+		this->seconds = seconds;
+		CorrectTime();
+	}
 }
 
 void Time::SetAll(int hours, int minutes, int seconds){
